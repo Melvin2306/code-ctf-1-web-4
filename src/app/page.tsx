@@ -20,7 +20,7 @@ export default function Home() {
           position: 'top-right',
         });
       } else {
-        toast.error(data.message, {
+        toast.error('Error processing request', {
           position: 'top-right',
         });
       }

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(request: NextRequest) {
   try {
-    const params = request.nextUrl.searchParams as string;
+    const params = request.nextUrl.searchParams;
     const moduleId = params.get('moduleId');
 
     if (moduleId) {
@@ -52,8 +52,6 @@ export async function GET(request: NextRequest) {
         });
       }
     } else {
-      console.log('no moduleId found');
-      console.log(request.query);
       return new NextResponse(
         JSON.stringify({ message: 'no moduleId found' }),
         {
