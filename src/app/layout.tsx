@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'CODE founder platform',
+  title: 'CODE module database',
 };
 
 export default function RootLayout({
